@@ -1,12 +1,64 @@
-# React + Vite
+# 🧠 AIvestor — Intelligent Stock Analysis Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AIvestor is a full-stack AI-powered stock advisory tool that helps investors make informed buy/sell/hold decisions based on news, financial metrics, and custom LLM reasoning.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔍 What It Does
 
-## Expanding the ESLint configuration
+- Takes a stock ticker and optionally your purchase quantity and date
+- Fetches real-time financials (cash, debt, earnings) and news headlines
+- Builds a prompt and sends it to **Meta LLaMA 3 (via Amazon Bedrock)**
+- Returns a personalized recommendation like `BUY MORE`, `SELL`, `HOLD`
+- Logs all activity to DynamoDB and exports to S3 for QuickSight dashboards
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🖥️ Frontend (React + Vite + Tailwind)
+
+- Live chart powered by `react-plotly.js`
+- Dynamic gradient background based on AI's decision
+- Decision badge with color-coded indicator
+- Form auto-handles bought vs not-yet-bought scenarios
+
+> 📦 Frontend deployed via AWS Amplify with GitHub CI/CD
+
+---
+
+## 🧠 Backend (AWS Lambda + Bedrock + APIs)
+
+🔒 **Backend is private for security.**  
+For access to the LLM prompt templates, Lambda code, and AWS architecture:
+
+📩 Contact: [manav@ieee.org](mailto:manav@ieee.org)
+
+
+---
+
+## 📊 Visualization Flow
+
+- DynamoDB holds all decisions
+- Exported to S3 via scheduled Lambda as CSV
+- Visualized live via **Amazon QuickSight**
+
+---
+
+## 🗂️ Architecture Diagram
+
+![AIvestor Architecture](./diagram-export-5-5-2025-8_41_49-PM.png)
+
+---
+
+## 🔧 Tech Stack
+
+- **Frontend**: React, Tailwind CSS, Plotly.js, Vite
+- **Backend**: AWS Lambda, Amazon API Gateway, Amazon Bedrock (LLaMA 3), DynamoDB
+- **Data Sources**: Financial Modeling Prep, Polygon, NewsAPI
+- **Visualization**: AWS S3 + QuickSight
+
+---
+
+## 💬 Support
+For backend or AWS help, reach out to **manav@ieee.org**.
+
+> Thank you for exploring AIvestor — where finance meets AI decision-making.
