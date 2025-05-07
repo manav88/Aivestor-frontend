@@ -42,7 +42,7 @@ For access to the LLM prompt templates, Lambda code, and AWS architecture:
 - Visualized live via **Amazon QuickSight**
 
 ---
-
+(./red.png)(./buy.png)(./hold.png)(./ui.png)
 ## 🗂️ Architecture Diagram
 
 ![AIvestor Architecture](./diagram-export-5-5-2025-8_41_49-PM.png)
