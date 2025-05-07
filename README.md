@@ -1,4 +1,4 @@
-# 🧠 AIvestor — Intelligent Stock Analysis Dashboard
+# 🧠 AIvestor — AI + INVESTOR
 
 AIvestor is a full-stack AI-powered stock advisory tool that helps investors make informed buy/sell/hold decisions based on news, financial metrics, and custom LLM reasoning.
 
