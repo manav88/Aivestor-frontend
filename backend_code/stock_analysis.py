@@ -3,7 +3,7 @@ import requests
 from datetime import datetime
 
 
-FMP_API_KEY = "fGHM7fruyYs5vcUwJWTzjwgzwekHcqWB"
+FMP_API_KEY = "XX"
 
 
 from datetime import datetime,timedelta
@@ -76,7 +76,7 @@ def fetch_news_headlines(ticker):
     query = f"{ticker} stock"
     url = (
         f"https://newsapi.org/v2/everything?"
-        f"q={query}&from={seven_days_ago}&sortBy=publishedAt&pageSize=5&apiKey=ebc21a63a9154bae84ecb8a97b0608a5"
+        f"q={query}&from={seven_days_ago}&sortBy=publishedAt&pageSize=5&apiKey=XX"
     )
     res = requests.get(url)
 
@@ -134,7 +134,7 @@ Project By: MANAV
 """
 
     actual_case = f"""
-<User Case> you are investment advisor. And on basis of below details give output as defined in examples exactly.Do not give code never.
+<User Case> you are investment advisor. And on basis of below details give output as defined in examples exactly.Do not give code.
 User owns {quantity} shares of {ticker}, bought at ${buy_price:.2f}. Current price is ${current_price:.2f}.
 Financials:
 - Cash: ${financials['cash']}
