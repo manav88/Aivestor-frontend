@@ -46,6 +46,7 @@ For access to the LLM prompt templates, Lambda code, and AWS architecture:
 ![](./red.png)
 ![](./buy.png)
 ![](./hold.png)
+![](./SCR-20250610-mgnr.png)
 
 ## 🗂️ Architecture Diagram
 
