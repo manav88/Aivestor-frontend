@@ -2,7 +2,7 @@ import json
 import boto3
 import requests
 
-POLYGON_API_KEY = "baYUOR_Lxm_bXi2sAcp80Cnvg183IDuG"
+POLYGON_API_KEY = "XX"
 
 def lambda_handler(event, context):
     try:
