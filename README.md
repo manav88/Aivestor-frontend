@@ -27,8 +27,8 @@ AIvestor is a full-stack AI-powered stock advisory tool that helps investors mak
 
 ## 🧠 Backend (AWS Lambda + Bedrock + APIs)
 
-🔒 **Backend is private for security.**  
-For access to the LLM prompt templates, Lambda code, and AWS architecture:
+ **Partial Backend is available.**  
+For access to the LLM prompt templates or Any other queries:
 
 📩 Contact: [manav@ieee.org](mailto:manav@ieee.org)
 
